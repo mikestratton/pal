@@ -10,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
         <!-- Styles -->
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <style>
             html, body {
                 background-color: #fff;
@@ -61,6 +62,12 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
+            .logo {
+                max-width: 20%;
+                margin-right: auto;
+                margin-left: auto;
+            }
         </style>
     </head>
     <body>
@@ -81,17 +88,11 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Photos After Life
                 </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                <div class="logo">
+                    <p><img class="img-fluid" src="img/pal_logo.png" alt="Photos After Life Logo"></p>
                 </div>
             </div>
         </div>
