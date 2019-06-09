@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace PhotosAfterLife;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -13,6 +13,6 @@ class Photo extends Model
     ];
 
     public function memory(){
-        return $this->belongsTo('App\PhotoMemory');
+        return $this->belongsTo('PhotosAfterLife\PhotoMemory');
     }
 }

@@ -1,0 +1,23 @@
+body{
+    background-color: rgba(173, 216, 230, 0.5);
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: midnightblue;
+}
+
+.navbar-laravel{
+    border-bottom: 4px solid midnightblue;
+}
+.big-text{
+    font-size: 56px;
+    font-weight: 500;
+    text-shadow: 4px 4px rgba(252, 252, 252, 0.5);
+}
+
+big-text-2{
+    font-size:48px;
+    font-weight: 500;
+}
+
+/* Moving Clouds */

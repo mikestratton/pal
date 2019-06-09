@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Providers;
+namespace PhotosAfterLife\Providers;
 
-use App\PhotoMemory;
-use App\Policies\PhotoMemoryPolicy;
+use PhotosAfterLife\PhotoMemory;
+use PhotosAfterLife\Policies\PhotoMemoryPolicy;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 
@@ -15,7 +15,7 @@ class AuthServiceProvider extends ServiceProvider
      * @var array
      */
     protected $policies = [
-        // 'App\Model' => 'App\Policies\ModelPolicy',
+        // 'PhotosAfterLife\Model' => 'PhotosAfterLife\Policies\ModelPolicy',
         PhotoMemory::class => PhotoMemoryPolicy::class,
     ];
 
