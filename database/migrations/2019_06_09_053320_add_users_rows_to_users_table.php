@@ -13,7 +13,7 @@ class AddUsersRowsToUsersTable extends Migration
      */
     public function up()
     {
-        /*DB::table('users')->insert(array(
+        DB::table('users')->insert(array(
             'name' => 'Michael Stratton',
             'email' => 'mike@sunnytree.org',
             'password' => bcrypt('scraz5a*T*T'),
@@ -25,7 +25,7 @@ class AddUsersRowsToUsersTable extends Migration
             'email' => 'mikesims0816@gmail.com',
             'password' => bcrypt('PAL19@@@!!!'),
             'role_id' => '1'
-        ));*/
+        ));
     }
 
     /**
