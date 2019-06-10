@@ -1,6 +1,6 @@
 <?php
 
-namespace PhotosAfterLife\Http\Middleware;
+namespace PAL\Http\Middleware;
 
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken as Middleware;
 

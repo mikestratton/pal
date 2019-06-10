@@ -18,3 +18,12 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('users', 'UserController', ['names'=>[
+    'index'=>'admin.users.index',
+    'create'=>'users.create',
+    'store'=>'users.store',
+    'edit'=>'users.edit',
+]])->middleware('auth');
+
+Route::post('is_active', 'UserController@approve');

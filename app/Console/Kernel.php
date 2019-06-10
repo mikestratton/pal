@@ -1,6 +1,6 @@
 <?php
 
-namespace PhotosAfterLife\Console;
+namespace PAL\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;

@@ -1,6 +1,6 @@
 <?php
 
-namespace PhotosAfterLife\Providers;
+namespace PAL\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Broadcast;

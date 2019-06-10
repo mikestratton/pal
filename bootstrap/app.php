@@ -28,17 +28,17 @@ $app = new Illuminate\Foundation\Application(
 
 $app->singleton(
     Illuminate\Contracts\Http\Kernel::class,
-    PhotosAfterLife\Http\Kernel::class
+    PAL\Http\Kernel::class
 );
 
 $app->singleton(
     Illuminate\Contracts\Console\Kernel::class,
-    PhotosAfterLife\Console\Kernel::class
+    PAL\Console\Kernel::class
 );
 
 $app->singleton(
     Illuminate\Contracts\Debug\ExceptionHandler::class,
-    PhotosAfterLife\Exceptions\Handler::class
+    PAL\Exceptions\Handler::class
 );
 
 /*

@@ -171,11 +171,11 @@ return [
         /*
          * Application Service Providers...
          */
-        PhotosAfterLife\Providers\AppServiceProvider::class,
-        PhotosAfterLife\Providers\AuthServiceProvider::class,
-        // PhotosAfterLife\Providers\BroadcastServiceProvider::class,
-        PhotosAfterLife\Providers\EventServiceProvider::class,
-        PhotosAfterLife\Providers\RouteServiceProvider::class,
+        PAL\Providers\AppServiceProvider::class,
+        PAL\Providers\AuthServiceProvider::class,
+        // PAL\Providers\BroadcastServiceProvider::class,
+        PAL\Providers\EventServiceProvider::class,
+        PAL\Providers\RouteServiceProvider::class,
 
     ],
 

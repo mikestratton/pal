@@ -2,7 +2,7 @@
 
 /* @var $factory \Illuminate\Database\Eloquent\Factory */
 
-use PhotosAfterLife\User;
+use PAL\User;
 use Illuminate\Support\Str;
 use Faker\Generator as Faker;
 

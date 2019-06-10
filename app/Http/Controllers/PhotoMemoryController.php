@@ -1,8 +1,8 @@
 <?php
 
-namespace PhotosAfterLife\Http\Controllers;
+namespace PAL\Http\Controllers;
 
-use PhotosAfterLife\PhotoMemory;
+use PAL\PhotoMemory;
 use Illuminate\Http\Request;
 
 class PhotoMemoryController extends Controller
@@ -41,7 +41,7 @@ class PhotoMemoryController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \PhotosAfterLife\PhotoMemory  $photoMemory
+     * @param  \PAL\PhotoMemory  $photoMemory
      * @return \Illuminate\Http\Response
      */
     public function show(PhotoMemory $photoMemory)
@@ -52,7 +52,7 @@ class PhotoMemoryController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \PhotosAfterLife\PhotoMemory  $photoMemory
+     * @param  \PAL\PhotoMemory  $photoMemory
      * @return \Illuminate\Http\Response
      */
     public function edit(PhotoMemory $photoMemory)
@@ -64,7 +64,7 @@ class PhotoMemoryController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \PhotosAfterLife\PhotoMemory  $photoMemory
+     * @param  \PAL\PhotoMemory  $photoMemory
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, PhotoMemory $photoMemory)
@@ -75,7 +75,7 @@ class PhotoMemoryController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \PhotosAfterLife\PhotoMemory  $photoMemory
+     * @param  \PAL\PhotoMemory  $photoMemory
      * @return \Illuminate\Http\Response
      */
     public function destroy(PhotoMemory $photoMemory)

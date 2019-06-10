@@ -34,7 +34,7 @@
     },
     "autoload": {
         "psr-4": {
-            "PhotosAfterLife\\": "app/"
+            "PAL\\": "app/"
         },
         "classmap": [
             "database/seeds",

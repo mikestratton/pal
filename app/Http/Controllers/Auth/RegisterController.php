@@ -1,9 +1,9 @@
 <?php
 
-namespace PhotosAfterLife\Http\Controllers\Auth;
+namespace PAL\Http\Controllers\Auth;
 
-use PhotosAfterLife\User;
-use PhotosAfterLife\Http\Controllers\Controller;
+use PAL\User;
+use PAL\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -59,7 +59,7 @@ class RegisterController extends Controller
      * Create a new user instance after a valid registration.
      *
      * @param  array  $data
-     * @return \PhotosAfterLife\User
+     * @return \PAL\User
      */
     protected function create(array $data)
     {
@@ -67,6 +67,7 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'role_id' => $data['role_id'],
         ]);
     }
 }

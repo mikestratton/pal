@@ -2,7 +2,7 @@
 
 /* @var $factory \Illuminate\Database\Eloquent\Factory */
 
-use PhotosAfterLife\PhotoMemory;
+use PAL\PhotoMemory;
 use Faker\Generator as Faker;
 
 $factory->define(PhotoMemory::class, function (Faker $faker) {

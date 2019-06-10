@@ -1,8 +1,8 @@
 <?php
 
-namespace PhotosAfterLife\Http\Controllers;
+namespace PAL\Http\Controllers;
 
-use PhotosAfterLife\Photo;
+use PAL\Photo;
 use Illuminate\Http\Request;
 
 class PhotoController extends Controller
@@ -41,7 +41,7 @@ class PhotoController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \PhotosAfterLife\Photo  $photo
+     * @param  \PAL\Photo  $photo
      * @return \Illuminate\Http\Response
      */
     public function show(Photo $photo)
@@ -52,7 +52,7 @@ class PhotoController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \PhotosAfterLife\Photo  $photo
+     * @param  \PAL\Photo  $photo
      * @return \Illuminate\Http\Response
      */
     public function edit(Photo $photo)
@@ -64,7 +64,7 @@ class PhotoController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \PhotosAfterLife\Photo  $photo
+     * @param  \PAL\Photo  $photo
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Photo $photo)
@@ -75,7 +75,7 @@ class PhotoController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \PhotosAfterLife\Photo  $photo
+     * @param  \PAL\Photo  $photo
      * @return \Illuminate\Http\Response
      */
     public function destroy(Photo $photo)

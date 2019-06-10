@@ -1,6 +1,6 @@
 <?php
 
-namespace PhotosAfterLife\Http\Middleware;
+namespace PAL\Http\Middleware;
 
 use Illuminate\Auth\Middleware\Authenticate as Middleware;
 

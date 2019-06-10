@@ -14,12 +14,12 @@
                 <span class="big-text"><i class="fas fa-search"></i></span>
             </h1>
         </div>
-        <div class="col-md-2 offset-2 text-center bg-light pt-4 pb-4 rounded">
-            <h1>JOIN US <br>
-                <span class="big-text"><i class="fas fa-user-friends"></i></span>
-            </h1>
+            <div class="col-md-2 offset-2 text-center bg-light pt-4 pb-4 rounded">
+                <h1><a href="{{ route('login') }}">JOIN US <br>
+                    <span class="big-text"><i class="fas fa-user-friends"></i></span>
+                    </a></h1>
+            </div>
 
-        </div>
     </div>
 </div>
 @endsection

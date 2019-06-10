@@ -1,6 +1,6 @@
 <?php
 
-namespace PhotosAfterLife\Http\Middleware;
+namespace PAL\Http\Middleware;
 
 use Illuminate\Http\Request;
 use Fideloper\Proxy\TrustProxies as Middleware;

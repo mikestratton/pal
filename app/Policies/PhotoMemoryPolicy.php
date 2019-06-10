@@ -1,9 +1,9 @@
 <?php
 
-namespace PhotosAfterLife\Policies;
+namespace PAL\Policies;
 
-use PhotosAfterLife\User;
-use PhotosAfterLife\Photo;
+use PAL\User;
+use PAL\Photo;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class PhotoMemoryPolicy
@@ -13,8 +13,8 @@ class PhotoMemoryPolicy
     /**
      * Determine whether the user can view the photo.
      *
-     * @param  \PhotosAfterLife\User  $user
-     * @param  \PhotosAfterLife\Photo  $photo
+     * @param  \PAL\User  $user
+     * @param  \PAL\Photo  $photo
      * @return mixed
      */
     public function view(User $user, Photo $photo)
@@ -25,7 +25,7 @@ class PhotoMemoryPolicy
     /**
      * Determine whether the user can create photos.
      *
-     * @param  \PhotosAfterLife\User  $user
+     * @param  \PAL\User  $user
      * @return mixed
      */
     public function create(User $user)
@@ -36,8 +36,8 @@ class PhotoMemoryPolicy
     /**
      * Determine whether the user can update the photo.
      *
-     * @param  \PhotosAfterLife\User  $user
-     * @param  \PhotosAfterLife\Photo  $photo
+     * @param  \PAL\User  $user
+     * @param  \PAL\Photo  $photo
      * @return mixed
      */
     public function update(User $user, Photo $photo)
@@ -48,8 +48,8 @@ class PhotoMemoryPolicy
     /**
      * Determine whether the user can delete the photo.
      *
-     * @param  \PhotosAfterLife\User  $user
-     * @param  \PhotosAfterLife\Photo  $photo
+     * @param  \PAL\User  $user
+     * @param  \PAL\Photo  $photo
      * @return mixed
      */
     public function delete(User $user, Photo $photo)
@@ -60,8 +60,8 @@ class PhotoMemoryPolicy
     /**
      * Determine whether the user can restore the photo.
      *
-     * @param  \PhotosAfterLife\User  $user
-     * @param  \PhotosAfterLife\Photo  $photo
+     * @param  \PAL\User  $user
+     * @param  \PAL\Photo  $photo
      * @return mixed
      */
     public function restore(User $user, Photo $photo)
@@ -72,8 +72,8 @@ class PhotoMemoryPolicy
     /**
      * Determine whether the user can permanently delete the photo.
      *
-     * @param  \PhotosAfterLife\User  $user
-     * @param  \PhotosAfterLife\Photo  $photo
+     * @param  \PAL\User  $user
+     * @param  \PAL\Photo  $photo
      * @return mixed
      */
     public function forceDelete(User $user, Photo $photo)

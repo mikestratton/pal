@@ -35,7 +35,7 @@ return [
     ],
 
     'stripe' => [
-        'model' => PhotosAfterLife\User::class,
+        'model' => PAL\User::class,
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
         'webhook' => [

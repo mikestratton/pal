@@ -1,6 +1,6 @@
 <?php
 
-namespace PhotosAfterLife;
+namespace PAL;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password', 'roles_id',
+        'name', 'email', 'password', 'role_id', 'is_active'
     ];
 
     /**
@@ -39,6 +39,6 @@ class User extends Authenticatable
 
     public function role(){
 
-        return $this->belongsTo('PhotosAfterLife\Role');
+        return $this->belongsTo('PAL\Role');
     }
 }

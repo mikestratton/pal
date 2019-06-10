@@ -1,8 +1,8 @@
 <?php
 
-namespace PhotosAfterLife\Http\Controllers\Auth;
+namespace PAL\Http\Controllers\Auth;
 
-use PhotosAfterLife\Http\Controllers\Controller;
+use PAL\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ResetsPasswords;
 
 class ResetPasswordController extends Controller

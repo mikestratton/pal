@@ -1,6 +1,6 @@
 <?php
 
-namespace PhotosAfterLife\Http\Controllers;
+namespace PAL\Http\Controllers;
 
 use Illuminate\Http\Request;
 

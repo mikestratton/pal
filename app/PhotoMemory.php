@@ -1,6 +1,6 @@
 <?php
 
-namespace PhotosAfterLife;
+namespace PAL;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -16,6 +16,6 @@ class PhotoMemory extends Model
     ];
 
     public function photo(){
-        return $this->hasMany('PhotosAfterLife\Photo');
+        return $this->hasMany('PAL\Photo');
     }
 }

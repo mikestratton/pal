@@ -68,7 +68,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => PhotosAfterLife\User::class,
+            'model' => PAL\User::class,
         ],
 
         // 'users' => [

@@ -20,4 +20,6 @@ big-text-2{
     font-weight: 500;
 }
 
-
+a:hover {
+    text-decoration:none;
+}
