@@ -15,7 +15,7 @@
             </h1>
         </div>
             <div class="col-md-2 offset-2 text-center bg-light pt-4 pb-4 rounded">
-                <h1><a href="{{ route('login') }}">JOIN US <br>
+                <h1><a href="{{ route('register') }}">JOIN US <br>
                     <span class="big-text"><i class="fas fa-user-friends"></i></span>
                     </a></h1>
             </div>

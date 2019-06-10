@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Photos After Life') }}</title>
+    <title>Photos After Life</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>

@@ -43,7 +43,6 @@
                             <label for="role_id" class="col-md-4 col-form-label text-md-right">{{ __('Subscription Type') }}</label>
 
                             <div class="col-md-6">
-                                input
                                 {!! Form::select('role_id', [2 => 'Creating a Photo Memorial',
                                                                     3 => 'Posting on a Photo Memorial'], 3, ['class'=>'form-control']) !!}
 
