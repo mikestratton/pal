@@ -43,15 +43,10 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('LOGIN') }}</a>
                             </li>
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
-                            @endif
-                        @else
 
+                        @else
                             @if(Auth::user()->role_id == 1)
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('admin.users.index') }}">{{ __('Users') }}</a>
