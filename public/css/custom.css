@@ -7,7 +7,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .navbar-laravel{
-    border-bottom: 4px solid midnightblue;
+    border-bottom: 2px solid #2323f1;
 }
 .big-text{
     font-size: 56px;
