@@ -14,7 +14,8 @@ class PhotoMemoryController extends Controller
      */
     public function index()
     {
-        //
+        // testing show profile
+        return view('users.public.memorials');
     }
 
     /**

@@ -7,8 +7,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .navbar-laravel{
-    border-bottom: 2px solid #2323f1;
+    border-bottom: 1px solid #2323f1;
+    height: auto;
 }
+
 .big-text{
     font-size: 56px;
     font-weight: 500;
@@ -22,4 +24,28 @@ big-text-2{
 
 a:hover {
     text-decoration:none;
+}
+
+.profile-photo {
+    height: 300px;
+    padding: 20px;
+}
+
+.profile-photo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    padding:4px;
+    border:4px solid silver;
+    background-color:lightgray;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px darkgray;
+}
+
+.profile-description{
+    padding: 20px;
+}
+.profile-description h1, h2 ,h3, h4, h5, h6, p{
+    color: slategray;
+    margin: 0 10px;
 }

@@ -16,7 +16,7 @@ class UserController extends Controller
 
 
         if($auth->role_id == 1){
-            return view('admin.users.index', compact('users'));
+            return view('users.admin.users.index', compact('users'));
         }
 
         return abort('404');
