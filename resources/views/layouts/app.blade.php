@@ -43,6 +43,9 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
+                                <a class="nav-link" href="{{ route('photo-memory.users.index') }}">{{ __('Memory') }}</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('LOGIN') }}</a>
                             </li>
 
