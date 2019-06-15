@@ -43,10 +43,10 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('photo-memory.users.index') }}">{{ __('Memory') }}</a>
+                                <a class="nav-link" href="{{ route('memory') }}">{{ __('Memory') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('LOGIN') }}</a>
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
 
                         @else
@@ -56,7 +56,7 @@
                                 </li>
                             @endif
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('photo-memory.users.index') }}">{{ __('Memory') }}</a>
+                                    <a class="nav-link" href="{{ route('memory') }}">{{ __('Memory') }}</a>
                                 </li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>

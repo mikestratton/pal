@@ -14,8 +14,7 @@ class PhotoMemoryController extends Controller
      */
     public function index()
     {
-        // testing show profile
-        return view('users.public.memorials');
+        //
     }
 
     /**
@@ -82,5 +81,9 @@ class PhotoMemoryController extends Controller
     public function destroy(PhotoMemory $photoMemory)
     {
         //
+    }
+
+    public function example(){
+        return view('users.public.memorials');
     }
 }
