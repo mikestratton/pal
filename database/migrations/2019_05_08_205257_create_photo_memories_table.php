@@ -19,8 +19,8 @@ class CreatePhotoMemoriesTable extends Migration
             $table->unsignedBigInteger('photo_id')->unsigned()->index();
             $table->string('name');
             $table->text('description');
-            $table->integer('year_born');
-            $table->integer('year_died');
+            $table->date('year_born');
+            $table->date('year_died');
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');

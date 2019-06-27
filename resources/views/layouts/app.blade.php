@@ -19,6 +19,8 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+
+    @stack('head')
 </head>
 <body>
     <div id="app">
@@ -85,5 +87,6 @@
             @yield('content')
         </main>
     </div>
+    @stack('footer-scripts')
 </body>
 </html>

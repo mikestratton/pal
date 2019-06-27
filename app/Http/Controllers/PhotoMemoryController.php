@@ -24,7 +24,7 @@ class PhotoMemoryController extends Controller
      */
     public function create()
     {
-        //
+        return view('users.public.memorials.create');
     }
 
     /**
