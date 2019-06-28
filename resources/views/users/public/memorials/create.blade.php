@@ -70,6 +70,7 @@
     <script type="text/javascript">
         $( document ).ready(function() {
             $( "#year_born" ).datepicker();
+            $( "#year_died" ).datepicker();
 
         });
     </script>
