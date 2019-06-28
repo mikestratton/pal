@@ -10,7 +10,6 @@ class Photo extends Model
         'user_id',
         'photo_memory_id',
         'file',
-        'caption',
     ];
 
     public function memory(){
