@@ -55,7 +55,7 @@ class PhotoMemoryController extends Controller
 
         PhotoMemory::create($input);
 
-        return 'it worked';
+        return redirect(route('photo-memory.index'));
     }
 
     /**
