@@ -21,4 +21,8 @@ class PhotoMemory extends Model
     public function photo(){
         return $this->hasMany('PAL\Photo');
     }
+
+    public function user(){
+        return $this->belongsTo('PAL\User');
+    }
 }

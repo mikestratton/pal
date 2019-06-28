@@ -39,6 +39,14 @@ class User extends Authenticatable
 
     public function role(){
 
-        return $this->belongsTo('PAL\Role');
+        return $this->hasMany('PAL\Role');
+    }
+
+    public function memory() {
+        return $this->hasMany('PAL\PhotoMemory');
+    }
+
+    public function photo() {
+        return $this->hasMany('PAL\Photo');
     }
 }

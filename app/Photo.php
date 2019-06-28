@@ -15,4 +15,6 @@ class Photo extends Model
     public function memory(){
         return $this->belongsTo('PAL\PhotoMemory');
     }
+
+
 }
