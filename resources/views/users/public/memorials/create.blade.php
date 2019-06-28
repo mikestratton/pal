@@ -61,6 +61,12 @@
                             {!! Form::text('year_died', null, ['class' => 'form-control']) !!}
                         </div>
                     </div>
+
+                    <div class="form-group row">
+                        {!! Form::submit('Create Photo Memory', ['class' => 'btn btn-primary offset-md-7']) !!}
+                    </div>
+
+                    {!! Form::close() !!}
                 </div>
             </div>
         </div>

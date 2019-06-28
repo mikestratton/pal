@@ -17,7 +17,6 @@ class CreatePhotosTable extends Migration
             $table->bigIncrements('id');
             $table->unsignedBigInteger('user_id')->unsigned()->index();
             $table->string('file');
-            $table->text('caption');
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');

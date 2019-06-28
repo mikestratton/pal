@@ -2,6 +2,8 @@
 
 namespace PAL\Http\Controllers;
 
+use Illuminate\Support\Facades\Auth;
+use PAL\Photo;
 use PAL\PhotoMemory;
 use Illuminate\Http\Request;
 
@@ -35,7 +37,23 @@ class PhotoMemoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $input = $request->all();
+        $input['user_id'] = Auth::id();
+
+        if($file = $request->file('photo_id')){
+            $name = time() . $file->getClientOriginalName();
+            $file->move('images/uploads', $name);
+            $photo = Photo::create(
+                [
+                    'file'    => $name,
+                    'user_id' => Auth::id(),
+                ]);
+            $input['photo_id'] = $photo->id;
+        }
+
+        PhotoMemory::create($input);
+
+        return 'it worked';
     }
 
     /**
