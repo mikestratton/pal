@@ -16,3 +16,6 @@ Homestead.json
 
 # PhpStorm #
 .idea/
+
+# App Specific
+/uploads
