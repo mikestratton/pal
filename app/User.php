@@ -39,7 +39,7 @@ class User extends Authenticatable
 
     public function role(){
 
-        return $this->hasMany('PAL\Role');
+        return $this->belongsTo('PAL\Role');
     }
 
     public function memory() {

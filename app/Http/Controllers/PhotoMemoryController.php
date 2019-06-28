@@ -16,7 +16,9 @@ class PhotoMemoryController extends Controller
      */
     public function index()
     {
-        //
+        $memories = PhotoMemory::all();
+
+        return view('users.public.memorials.index', compact('memories'));
     }
 
     /**

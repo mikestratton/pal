@@ -8,6 +8,7 @@ class Photo extends Model
 {
     protected $fillable = [
         'user_id',
+        'photo_memory_id',
         'file',
         'caption',
     ];

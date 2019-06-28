@@ -63,7 +63,7 @@
                     </div>
 
                     <div class="form-group row">
-                        {!! Form::submit('Create Photo Memory', ['class' => 'btn btn-primary offset-md-7']) !!}
+                        {!! Form::submit('Create Photo Memory', ['class' => 'btn btn-primary offset-md-7    ']) !!}
                     </div>
 
                     {!! Form::close() !!}

@@ -29,7 +29,7 @@ Route::resource('users', 'UserController', ['names'=>[
 Route::post('is_active', 'UserController@approve');
 
 Route::resource('photo-memory', 'PhotoMemoryController', ['names'=>[
-    'index'=>'photo-memory.users.index',
+    'index'=>'photo-memory.index',
     'create'=>'photo-memory.create',
     'store'=>'photo-memory.store',
     'edit'=>'photo-memory.edit',
