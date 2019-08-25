@@ -19,13 +19,6 @@ class AddUsersRowsToUsersTable extends Migration
             'password' => bcrypt('scraz5a*T*T'),
             'role_id' => '1'
         ));
-
-        DB::table('users')->insert(array(
-            'name' => 'Mike Sims',
-            'email' => 'mikesims0816@gmail.com',
-            'password' => bcrypt('PAL19@@@!!!'),
-            'role_id' => '1'
-        ));
     }
 
     /**
