@@ -43,22 +43,17 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
-                        @auth
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('photo-memory.index') }}">{{ __('Memory') }}</a>
-                            </li>
-                        @endauth
-
                         @guest
 
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('photos') }}">{{ __('Photos') }}</a>
+                                <a class="nav-link" href="{{ route('photos') }}">{{ __('Memory') }}</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
 
                         @else
+
                             @if(Auth::user()->role_id == 1)
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('admin.users.index') }}">{{ __('Users') }}</a>
