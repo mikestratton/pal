@@ -48,6 +48,9 @@
                                 <a class="nav-link" href="{{ route('photo-memory.index') }}">{{ __('Memory') }}</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link" href="{{ route('photos') }}">{{ __('Photos') }}</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
 

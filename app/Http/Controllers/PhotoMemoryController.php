@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 
 class PhotoMemoryController extends Controller
 {
-    /**
+     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
@@ -105,5 +105,11 @@ class PhotoMemoryController extends Controller
 
     public function example(){
         return view('users.public.memorials');
+    }
+
+    public function photos(){
+        $memories = PhotoMemory::all();
+
+        return view('users.public.memorials.index-public', compact('memories'));
     }
 }

@@ -35,4 +35,13 @@ Route::resource('photo-memory', 'PhotoMemoryController', ['names'=>[
     'edit'=>'photo-memory.edit',
 ]])->middleware('auth');
 
+/*Route::get('photo-memory', 'PhotoMemoryController@index')->name('photo-memory.index');
+Route::get('create', 'PhotoMemoryController@create')->name('photo-memory.create')->middleware('auth');
+Route::get('store', 'PhotoMemoryController@store')->name('photo-memory.store')->middleware('auth');
+Route::get('edit', 'PhotoMemoryController@edit')->name('photo-memory.edit')->middleware('auth');*/
+
+
+
 Route::get('memory', 'PhotoMemoryController@example')->name('memory');
+
+Route::get('photos', 'PhotoMemoryController@photos')->name('photos');
