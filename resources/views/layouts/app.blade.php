@@ -43,10 +43,14 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
-                        @guest
+                        @auth
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('photo-memory.index') }}">{{ __('Memory') }}</a>
                             </li>
+                        @endauth
+
+                        @guest
+
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('photos') }}">{{ __('Photos') }}</a>
                             </li>
